@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/bg_light" android:padding="16dp">
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Productos" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/primary" android:paddingBottom="12dp" />
+ <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="16dp" app:cardElevation="1dp" app:strokeColor="@color/border_soft" app:strokeWidth="1dp">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+   <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Buscar por nombre o SKU" app:boxBackgroundMode="outline" app:startIconDrawable="@android:drawable/ic_menu_search" app:boxCornerRadiusTopStart="12dp" app:boxCornerRadiusTopEnd="12dp" app:boxCornerRadiusBottomStart="12dp" app:boxCornerRadiusBottomEnd="12dp">
+    <com.google.android.material.textfield.TextInputEditText android:id="@+id/etSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="text" />
+   </com.google.android.material.textfield.TextInputLayout>
+   <Spinner android:id="@+id/spinnerCategory" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="4dp" />
+   <com.google.android.material.button.MaterialButton android:id="@+id/btnAddProduct" android:layout_width="match_parent" android:layout_height="48dp" android:text="Nuevo producto" android:textStyle="bold" app:cornerRadius="12dp" />
+  </LinearLayout>
+ </com.google.android.material.card.MaterialCardView>
+ <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="12dp">
+  <ListView android:id="@+id/listProducts" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/border_soft" android:dividerHeight="1dp" android:background="@color/card_bg" android:padding="6dp" />
+  <TextView android:id="@+id/tvEmpty" android:layout_width="match_parent" android:layout_height="match_parent" android:text="No hay productos." android:textColor="@color/text_secondary" android:textSize="14sp" android:gravity="center" android:visibility="gone" />
+ </FrameLayout>
+</LinearLayout>
