@@ -8,4 +8,9 @@
         <item name="android:windowBackground">@color/bg_light</item>
     </style>
     <style name="Theme.SQLite" parent="Base.Theme.SQLite" />
+    <style name="Theme.SQLite.Splash" parent="Theme.SQLite">
+        <item name="android:windowBackground">@color/bg_light</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
 </resources>
+

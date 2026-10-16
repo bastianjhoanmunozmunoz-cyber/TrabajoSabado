@@ -11,33 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SQLite">
-        <activity android:name=".CategoriasActivity" android:exported="false" />
-        <activity android:name=".AdminActivity" android:exported="false" />
-        <activity android:name=".MovimientosActivity" android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:theme="@style/Theme.SQLite.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Editar"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".Leer"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ViewActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".MainActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Leer" android:exported="false" />
+        <activity android:name=".MovimientosActivity" android:exported="false" />
+        <activity android:name=".CategoriasActivity" android:exported="false" />
+        <activity android:name=".AdminActivity" android:exported="false" />
     </application>
-
 </manifest>
-
-

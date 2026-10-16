@@ -13,7 +13,7 @@
   <com.google.android.material.button.MaterialButton android:id="@+id/btnCategories" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="52dp" android:text="Consultar categorías" android:textAlignment="viewStart" android:textSize="14sp" android:layout_marginTop="8dp" app:cornerRadius="12dp" />
   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cuenta" android:textColor="@color/text_secondary" android:textSize="13sp" android:textStyle="bold" android:paddingTop="20dp" android:paddingBottom="6dp" />
   <com.google.android.material.button.MaterialButton android:id="@+id/btnAdmin" android:layout_width="match_parent" android:layout_height="52dp" android:text="Administración" android:textAlignment="viewStart" android:textSize="14sp" android:layout_marginTop="2dp" app:cornerRadius="12dp" app:backgroundTint="@color/teal_soft" android:textColor="@color/primary" />
-  <com.google.android.material.button.MaterialButton android:id="@+id/btnChangePassword" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="50dp" android:text="Cambiar contraseña" android:layout_marginTop="8dp" app:cornerRadius="12dp" />
   <com.google.android.material.button.MaterialButton android:id="@+id/btnLogout" style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent" android:layout_height="48dp" android:text="Cerrar sesión" android:textColor="@color/btn_delete" android:layout_marginTop="4dp" />
  </LinearLayout>
 </ScrollView>
+
